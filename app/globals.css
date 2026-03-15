@@ -13,6 +13,7 @@
   --font-mono: var(--font-geist-mono);
   --font-montserrat: var(--font-montserrat);
 
+  --color-primary: #00d5be;
   --color-pearl: #FFF7E6;
   --color-midnight: #102E4A;
 }
@@ -31,5 +32,5 @@ body {
 }
 
 .hamburger-line {
-    @apply w-8.75 h-0.5 my-2 block bg-midnight transform rotate-0 translate-y-0 scale-100;
+    @apply w-8.75 h-0.5 my-2 block bg-primary transform rotate-0 translate-y-0 scale-100;
   }
