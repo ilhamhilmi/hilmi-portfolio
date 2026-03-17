@@ -46,7 +46,7 @@ export default function NavbarClient() {
       <header className="hidden w-full z-50 fixed top-0 left-0 xl:flex items-center justify-center px-6">
         <nav className="bg-white w-2/3 2xl:w-1/2 rounded-full px-6 py-4 mt-8 flex items-center justify-between">
           <div>
-            <a href="" className="text-primary font-montserrat font-semibold uppercase">Muhammad Ilham Hilmi</a>
+            <a href="#home" className="text-primary font-montserrat font-semibold uppercase">Ilham Hilmi</a>
           </div>
           <div className="space-x-12">
             <a href="#home" className="text-primary font-montserrat text-sm font-semibold hover:text-teal-600 duration-200">Home</a>
