@@ -4,7 +4,7 @@ export default function Eye() {
     return (
         <div>
             <svg
-                className="w-8 xl:w-15 text-midnight"
+                className="w-8 xl:w-15 text-violet-400"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="none"

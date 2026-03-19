@@ -111,15 +111,15 @@ export default function Home() {
             <div className="flex items-center justify-center">
               <div className="flex flex-col items-center w-1/3">
                 <Code />
-                <p className="text-midnight font-montserrat text-center mt-3 xl:text-xl">Frontend Development</p>
+                <p className="text-midnight font-montserrat text-center mt-3 xl:text-xl font-semibold xl:w-1/2">Frontend Development</p>
               </div>
               <div className="flex flex-col items-center w-1/3">
                 <Eye />
-                <p className="text-midnight font-montserrat text-center mt-3 xl:text-xl">UI / UX Design</p>
+                <p className="text-midnight font-montserrat text-center mt-3 xl:text-xl font-semibold">UI / UX Design</p>
               </div>
               <div className="flex flex-col items-center w-1/3">
                 <RestApi />
-                <p className="text-midnight font-montserrat text-center mt-3 xl:text-xl">API Integration</p>
+                <p className="text-midnight font-montserrat text-center mt-3 xl:text-xl font-semibold">API Integration</p>
               </div>
             </div>
           </div>
