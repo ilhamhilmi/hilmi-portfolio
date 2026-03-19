@@ -10,14 +10,16 @@ export default function NavbarClient() {
   const menuRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
+    const handleClickOutside = (event: MouseEvent | TouchEvent) => {
       if (isOpen && menuRef.current && !menuRef.current.contains(event.target as Node)) {
         setIsOpen(false);
       }
     };
     document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener('touchstart', handleClickOutside);
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('touchstart', handleClickOutside);
     };
   }, [isOpen]);
 
@@ -32,7 +34,7 @@ export default function NavbarClient() {
           </button>
           <a href="" className="border border-primary rounded-full px-3 py-2  text-white bg-primary font-montserrat">Download CV</a>
 
-          <div className={`bg-white shadow-md border border-slate-200 absolute left-0 top-full mt-3.5 rounded-4xl w-full px-6 transition-all duration-250 ease-in-out text-center flex flex-col space-y-5 ${isOpen ? 'max-h-100 opacity-100 py-4' : 'max-h-0 opacity-0 py-0'}`}>
+          <div className={`bg-white shadow-md border border-slate-200 absolute left-0 top-full mt-3.5 rounded-4xl w-full px-6 transition-all duration-250 ease-in-out text-center flex flex-col space-y-5 ${isOpen ? 'max-h-100 opacity-100 py-4 pointer-events-auto visible' : 'max-h-0 opacity-0 py-0 pointer-event-none invisible'}`}>
             <a onClick={() => setIsOpen(false)} href="#home" className="text-primary font-montserrat font-semibold text-xl">Home</a>
             <a onClick={() => setIsOpen(false)} href="#about" className="text-primary font-montserrat font-semibold text-xl">About</a>
             <a onClick={() => setIsOpen(false)} href="#contact" className="text-primary font-montserrat font-semibold text-xl">Contact</a>
