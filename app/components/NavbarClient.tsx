@@ -37,6 +37,7 @@ export default function NavbarClient() {
           <div className={`bg-white shadow-md border border-slate-200 absolute left-0 top-full mt-3.5 rounded-4xl w-full px-6 transition-all duration-250 ease-in-out text-center flex flex-col space-y-5 ${isOpen ? 'max-h-100 opacity-100 py-4 pointer-events-auto visible' : 'max-h-0 opacity-0 py-0 pointer-event-none invisible'}`}>
             <a onClick={() => setIsOpen(false)} href="#home" className="text-primary font-montserrat font-semibold text-xl">Home</a>
             <a onClick={() => setIsOpen(false)} href="#about" className="text-primary font-montserrat font-semibold text-xl">About</a>
+            <a onClick={() => setIsOpen(false)} href="#project" className="text-primary font-montserrat font-semibold text-xl">Project</a>
             <a onClick={() => setIsOpen(false)} href="#contact" className="text-primary font-montserrat font-semibold text-xl">Contact</a>
           </div>
 
@@ -53,6 +54,7 @@ export default function NavbarClient() {
           <div className="space-x-12">
             <a href="#home" className="text-primary font-montserrat text-sm font-semibold hover:text-teal-600 duration-200">Home</a>
             <a href="#about" className="text-primary font-montserrat text-sm font-semibold hover:text-teal-600 duration-200">About</a>
+            <a href="#project" className="text-primary font-montserrat text-sm font-semibold hover:text-teal-600 duration-200">Project</a>
             <a href="#contact" className="text-primary font-montserrat text-sm font-semibold hover:text-teal-600 duration-200">Contact</a>
             <a href="" className="border border-primary rounded-full px-3 py-1.5  text-white bg-primary font-montserrat text-sm hover:bg-teal-600 hover:border-teal-600 hover:shadow-md duration-200">Download CV</a>
           </div>

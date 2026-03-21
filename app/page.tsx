@@ -5,14 +5,6 @@ import RestApi from "./components/RestApi"
 import Code from "./components/Code"
 import Circle from "./components/Circle"
 import Image from "next/image"
-import Link from "next/link"
-import hero from "@/public/hero/hero.png"
-import photo from "@/public/hero/photo.jpeg"
-import insta from "@/public/hero/insta.png"
-import github from "@/public/hero/github.png"
-import gmail from "@/public/hero/gmail.png"
-import linkedin from "@/public/hero/linkedin.png"
-import heroMobile from "@/public/hero/hero-mobile.png"
 import { TypeAnimation } from 'react-type-animation';
 
 export default function Home() {
@@ -21,8 +13,8 @@ export default function Home() {
       <NavbarClient />
 
       <section id="home" className="min-h-screen w-full flex items-center px-8 pt-16 xl:pt-18">
-        <Image src={heroMobile} alt="heroMobile" fill className="xl:hidden object-cover -z-10 inset-0 absolute" />
-        <Image src={hero} alt="hero" fill className="hidden xl:flex object-cover -z-10 inset-0" />
+        <Image src="/hero/hero-mobile.png" alt="heroMobile" fill className="xl:hidden object-cover -z-10 inset-0 absolute" />
+        <Image src="/hero/hero.png" alt="hero" fill className="hidden xl:flex object-cover -z-10 inset-0" />
         <div className="container mx-auto flex flex-col xl:flex-row xl:justify-evenly">
 
           <div className="mb-5.5 xl:mb-0 flex flex-col justify-center">
@@ -49,20 +41,20 @@ export default function Home() {
 
           <div className="h-full flex flex-col justify-center items-center">
             <div className="mb-3">
-              <Image src={photo} alt="photo" className="rounded-2xl shadow-md hover:shadow-xl hover:-rotate-1 hover:scale-[1.03] duration-200 w-112.5 2xl:w-125" />
+              <Image src="/hero/photo.jpeg" width={450} height={300} alt="photo" className="rounded-2xl shadow-md hover:shadow-xl hover:-rotate-1 hover:scale-[1.03] duration-200 2xl:w-125" />
             </div>
             <div className="flex justify-between w-full justify-items-center">
               <a href="https://www.instagram.com/ilhamhlmi?igsh=MWxkaHVyd29mYzBhdQ==" target="_blank" rel="noopener noreferrer">
-                <Image src={insta} alt="insta" width={55} className="bg-white border border-white p-1.5 rounded-2xl hover:scale-[1.2] hover:rotate-5 duration-200 hover:border-primary shadow-md hover:shadow-xl" />
+                <Image src="/hero/insta.png" alt="insta" width={55} height={55} className="bg-white border border-white p-1.5 rounded-2xl hover:scale-[1.2] hover:rotate-5 duration-200 hover:border-primary shadow-md hover:shadow-xl" />
               </a>
               <a href="https://github.com/ilhamhilmi" target="_blank" rel="noopener noreferrer">
-                <Image src={github} alt="github" width={55} className="bg-white border border-white p-1.5 rounded-2xl hover:scale-[1.2] hover:-rotate-5 duration-200 hover:border-primary shadow-md hover:shadow-xl" />
+                <Image src="/hero/github.png" alt="github" width={55} height={55} className="bg-white border border-white p-1.5 rounded-2xl hover:scale-[1.2] hover:-rotate-5 duration-200 hover:border-primary shadow-md hover:shadow-xl" />
               </a>
               <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ilhamhilmi206@gmail.com" target="_blank" rel="noopener noreferrer">
-                <Image src={gmail} alt="gmail" width={55} className="bg-white border border-white p-1.5 rounded-2xl hover:scale-[1.2] hover:rotate-5 duration-200 hover:border-primary shadow-md hover:shadow-xl" />
+                <Image src="/hero/gmail.png" alt="gmail" width={55} height={55} className="bg-white border border-white p-1.5 rounded-2xl hover:scale-[1.2] hover:rotate-5 duration-200 hover:border-primary shadow-md hover:shadow-xl" />
               </a>
               <a href="#">
-                <Image src={linkedin} alt="linkedin" width={55} className="bg-white border border-white p-1.5 rounded-2xl hover:scale-[1.2] hover:-rotate-5 duration-200 hover:border-primary shadow-md hover:shadow-xl" />
+                <Image src="/hero/linkedin.png" alt="linkedin" width={55} height={55} className="bg-white border border-white p-1.5 rounded-2xl hover:scale-[1.2] hover:-rotate-5 duration-200 hover:border-primary shadow-md hover:shadow-xl" />
               </a>
             </div>
           </div>
@@ -71,12 +63,12 @@ export default function Home() {
       </section>
 
       <section id="about" className="w-full flex flex-col items-center px-8 pt-16 pb-16 xl:pt-18 relative scroll-mt-12 xl:scroll-mt-16">
-        <Image src={heroMobile} alt="heroMobile" fill className="xl:hidden object-cover -z-10 inset-0 absolute" />
-        <Image src={hero} alt="hero" fill className="hidden xl:flex object-cover -z-10 inset-0" />
+        <Image src="/hero/hero-mobile.png" alt="heroMobile" fill className="xl:hidden object-cover -z-10 inset-0 absolute" />
+        <Image src="/hero/hero.png" alt="hero" fill className="hidden xl:flex object-cover -z-10 inset-0" />
         <div className="container mx-auto">
           <div>
             <div className="text-center mb-8.5 flex justify-center">
-              <h1 className="text-midnight font-montserrat font-semibold text-xl xl:text-2xl">About Me</h1>
+              <h1 className="text-midnight font-montserrat font-semibold text-xl xl:text-2xl uppercase tracking-[0.2em]">About Me</h1>
             </div>
             <div className="flex flex-col xl:flex-row xl:space-x-4.5 space-y-5 xl:space-y-0">
               <div className="">
@@ -101,12 +93,12 @@ export default function Home() {
       </section>
 
       <section className="w-full flex flex-col items-center px-8 pt-16 pb-16 xl:pt-18 relative space-y-16">
-        <Image src={heroMobile} alt="heroMobile" fill className="xl:hidden object-cover -z-10 inset-0 absolute" />
-        <Image src={hero} alt="hero" fill className="hidden xl:flex object-cover -z-10 inset-0" />
+        <Image src="/hero/hero-mobile.png" alt="heroMobile" fill className="xl:hidden object-cover -z-10 inset-0 absolute" />
+        <Image src="/hero/hero.png" alt="hero" fill className="hidden xl:flex object-cover -z-10 inset-0" />
         <div className="container mx-auto">
           <div>
             <div className="mb-8.5 text-center flex justify-center">
-              <h1 className="text-midnight font-montserrat font-semibold text-xl xl:text-2xl">Skills & Expertise</h1>
+              <h1 className="text-midnight font-montserrat font-semibold text-xl xl:text-2xl uppercase tracking-[0.2em]">Skills & Expertise</h1>
             </div>
             <div className="flex items-center justify-center">
               <div className="flex flex-col items-center w-1/3">
@@ -139,12 +131,12 @@ export default function Home() {
       </section>
 
       <section className="w-full flex flex-col items-center px-8 pt-16 pb-16 xl:pt-18 relative space-y-16">
-        <Image src={heroMobile} alt="heroMobile" fill className="xl:hidden object-cover -z-10 inset-0 absolute" />
-        <Image src={hero} alt="hero" fill className="hidden xl:flex object-cover -z-10 inset-0" />
+        <Image src="/hero/hero-mobile.png" alt="heroMobile" fill className="xl:hidden object-cover -z-10 inset-0 absolute" />
+        <Image src="/hero/hero.png" alt="hero" fill className="hidden xl:flex object-cover -z-10 inset-0" />
         <div className="container mx-auto">
           <div>
             <div className="mb-8.5 text-center flex justify-center">
-              <h1 className="text-midnight font-montserrat font-semibold text-xl xl:text-2xl">Education & Certifications</h1>
+              <h1 className="text-midnight font-montserrat font-semibold text-xl xl:text-2xl uppercase tracking-[0.2em]">Education & Certifications</h1>
             </div>
             <div>
 
@@ -172,15 +164,139 @@ export default function Home() {
               <div className="flex justify-center items-center">
                 <div className="grid grid-cols-1 gap-y-4 xl:gap-y-0 xl:gap-x-4 xl:grid-cols-2 xl:w-2/3 justify-center items-center mt-8.5">
                   <a href="" className="border border-midnight bg-green-200 text-center p-2 rounded-2xl shadow-md hover:shadow-xl duration-200 hover:scale-[1.02]">
-                    <p className="text-midnight font-semibold font-montserrat">TOEFL Prediction Score - 530</p>
+                    <p className="text-midnight font-semibold font-montserrat">Placeholder</p>
                   </a>
                   <a href="" className="border border-midnight bg-green-200 text-center p-2 rounded-2xl shadow-md hover:shadow-xl duration-200 hover:scale-[1.02]">
-                    <p className="text-midnight font-semibold font-montserrat">Dicoding Fullstack Development Camp</p>
+                    <p className="text-midnight font-semibold font-montserrat">Placeholder</p>
                   </a>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section id="project" className="w-full flex flex-col items-center px-8 pt-16 pb-16 xl:pt-18 relative scroll-mt-12 xl:scroll-mt-16">
+        <Image src="/hero/hero-mobile.png" alt="heroMobile" fill className="xl:hidden object-cover -z-10 inset-0 absolute" />
+        <Image src="/hero/hero.png" alt="hero" fill className="hidden xl:flex object-cover -z-10 inset-0" />
+        <div className="container mx-auto">
+          <div>
+
+            <div className="mb-8.5 text-center flex justify-center">
+              <h1 className="text-midnight font-montserrat font-semibold text-xl xl:text-2xl uppercase tracking-[0.2em]">Projects</h1>
+            </div>
+
+            <div className="flex flex-col xl:flex-row space-y-5 xl:space-y-0 xl:justify-evenly items-center justify-center">
+              <div className="border border-midnight rounded-2xl bg-white overflow-hidden">
+                <div className="relative">
+                  <div className="absolute inset-0 flex items-end justify-end p-5 space-x-2.5">
+                    <a href="">
+                      <div className="border border-white/30 bg-white/5 p-2 backdrop-blur-sm rounded-md hover:scale-[1.1] duration-200 ">
+                        <Image src="/projects/github-svgrepo-com.svg" alt="github" width={40} height={40} />
+                      </div>
+                    </a>
+                    <a href="https://lapcare-rpl.vercel.app/" target="_blank" rel="noopener noreferrer">
+                      <div className="border border-white/30 bg-white/5 p-2 backdrop-blur-sm rounded-md hover:scale-[1.1] duration-200 ">
+                        <svg
+                          className="w-10 text-white"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" />
+                          <circle cx="12" cy="12" r="3" />
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                  <Image src="/projects/Lapcare Preview.png" alt="Lapcare" width={450} height={300} className="rounded-t-2xl" />
+                </div>
+                <div className="py-2 px-4 space-y-2 flex flex-col">
+                  <h1 className="text-midnight font-montserrat font-semibold">LapCare</h1>
+                  <p className="font-montserrat text-midnight max-w-90">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia odit dolores non harum! Saepe, ut.</p>
+                </div>
+              </div>
+
+              <div className="border border-midnight rounded-2xl bg-white overflow-hidden">
+                <div className="relative">
+                  <div className="absolute inset-0 flex items-end justify-end p-5 space-x-2.5">
+                    <a href="">
+                      <div className="border border-white/30 bg-white/5 p-2 backdrop-blur-sm rounded-md hover:scale-[1.1] duration-200 ">
+                        <Image src="/projects/github-svgrepo-com.svg" alt="github" width={40} height={40} />
+                      </div>
+                    </a>
+                    <a href="https://wedware.vercel.app/" target="_blank" rel="noopener noreferrer">
+                      <div className="border border-white/30 bg-white/5 p-2 backdrop-blur-sm rounded-md hover:scale-[1.1] duration-200 ">
+                        <svg
+                          className="w-10 text-white"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" />
+                          <circle cx="12" cy="12" r="3" />
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                  <Image src="/projects/Wedware Preview.png" alt="Lapcare" width={450} height={300} className="rounded-t-2xl" />
+                </div>
+                <div className="py-2 px-4 space-y-2 flex flex-col">
+                  <h1 className="text-midnight font-montserrat font-semibold">WedWare</h1>
+                  <p className="font-montserrat text-midnight max-w-90">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia odit dolores non harum! Saepe, ut.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" className="w-full flex flex-col items-center px-8 pt-16 pb-16 xl:pt-18 relative scroll-mt-12 xl:scroll-mt-16">
+        <Image src="/hero/hero-mobile.png" alt="heroMobile" fill className="xl:hidden object-cover -z-10 inset-0 absolute" />
+        <Image src="/hero/hero.png" alt="hero" fill className="hidden xl:flex object-cover -z-10 inset-0" />
+        <div className="container mx-auto flex flex-col xl:flex-row bg-sky-400">
+
+          <div className="bg-amber-200">
+            <div className="mb-8.5 text-start flex justify-start">
+              <h1 className="text-midnight font-montserrat font-bold text-xl xl:text-2xl uppercase tracking-[0.2em]">Get in Touch</h1>
+            </div>
+            <div className="flex flex-col space-y-5">
+              <div className="border-l-4 border-midnight pl-3.5 space-y-2">
+                <h1 className="font-montserrat text-secondary font-semibold uppercase">Email</h1>
+                <p className="font-montserrat text-midnight">ilhamhilmi206@gmail.com</p>
+              </div>
+              <div className="border-l-4 border-midnight pl-3.5 space-y-2">
+                <h1 className="font-montserrat text-secondary font-semibold uppercase">Phone</h1>
+                <p className="font-montserrat text-midnight">+62 895 4032 74420</p>
+              </div>
+              <div className="border-l-4 border-midnight pl-3.5 space-y-2">
+                <h1 className="font-montserrat text-secondary font-semibold uppercase">Location</h1>
+                <p className="font-montserrat text-midnight">Jakarta, Indonesia</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-emerald-200">
+            <div className="mb-8.5 text-start flex justify-start">
+              <h1 className="text-midnight font-montserrat font-bold text-xl xl:text-2xl uppercase tracking-[0.2em]">Reach Me Out</h1>
+            </div>
+            <div className="flex flex-col space-y-5">
+              <input type="email" className="border-b-2"/>
+              <input type="email" />
+              <textarea name="" id=""/>
+            </div>
+          </div>
+          
+
+
         </div>
       </section>
 
